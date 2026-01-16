@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoCheck</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>AlgoCheck</h2>
+    <p class="subtitle">Check & Generate Number / String Algorithms</p>
+
+    <select id="checkerType">
+      <option value="">-- Select Option --</option>
+      <option value="prime">Prime Number</option>
+      <option value="armstrong">Armstrong Number</option>
+      <option value="palindrome">Palindrome</option>
+      <option value="evenOdd">Even / Odd</option>
+      <option value="reverse">Reverse String</option>
+    </select>
+
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Enter value here"
+    />
+
+    <div class="btn-group">
+      <button onclick="checkValue()">Check</button>
+      <button class="secondary" onclick="generateValue()">Generate</button>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
